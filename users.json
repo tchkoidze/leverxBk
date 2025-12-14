@@ -1,0 +1,528 @@
+{
+  "users": [
+    {
+      "_id": "d6d206e5-2ca4-443d-8404-dc05284e2d15",
+      "isRemoteWork": true,
+      "user_avatar": "/assets/employee-avatars/luffy.png",
+      "first_name": "tony",
+      "last_name": "halowy",
+      "first_native_name": "",
+      "last_native_name": "",
+      "middle_native_name": "",
+      "department": "",
+      "building": "",
+      "room": "",
+      "date_birth": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "desk_number": 0,
+      "manager": {
+        "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+        "first_name": "",
+        "last_name": ""
+      },
+      "phone": "+5793129179",
+      "email": "tony.hal@leverx.com",
+      "telegram": "",
+      "cnumber": "",
+      "citizenship": "Georgia",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "National visa type D",
+          "start_date": 1652158800000,
+          "end_date": 1683608400000
+        },
+        {
+          "issuing_country": "Poland",
+          "type": "National visa type C",
+          "start_date": 1652158800000,
+          "end_date": 1809838800000
+        }
+      ],
+      "passwordHash": "$2a$06$NJHtKmLtKKYBeWE79XWaLOpAL/Xbb6izwFHV2l.eVts3w/gv8nBHu",
+      "role": "admin"
+    },
+    {
+      "_id": "ae0e23f9-21c8-4c93-a95c-44991f112201",
+      "isRemoteWork": false,
+      "user_avatar": "/assets/employee-avatars/brenda.png",
+      "first_name": "Brendan",
+      "last_name": "Krueger",
+      "first_native_name": "Brendan",
+      "last_native_name": "Krueger",
+      "middle_native_name": "Lewis",
+      "department": "Frontend Development",
+      "building": "Kovalski 07 (Poland)",
+      "room": "312",
+      "date_birth": {
+        "year": 1990,
+        "month": 4,
+        "day": 12
+      },
+      "desk_number": 42,
+      "manager": {
+        "id": "m1001-aab2",
+        "first_name": "Michael",
+        "last_name": "Stone"
+      },
+      "phone": "+491721998211",
+      "email": "brendan.krueger@leverx.com",
+      "telegram": "@brendan_k",
+      "cnumber": "C9001101",
+      "citizenship": "Germany",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "Work Permit",
+          "start_date": 1672158800000,
+          "end_date": 1703608400000
+        }
+      ],
+      "passwordHash": "$2a$06$imTE3hnTjryfKQChPdleMujzSDCbGofs3n03z0BXhfNTmHZPo.VKC",
+      "role": "employee"
+    },
+    {
+      "_id": "b3c1c922-34f1-4e7c-88aa-115bfa7299c4",
+      "isRemoteWork": true,
+      "user_avatar": "/assets/employee-avatars/andrew.png",
+      "first_name": "Andrew",
+      "last_name": "Savage",
+      "first_native_name": "Andrew",
+      "last_native_name": "Savage",
+      "middle_native_name": "Cole",
+      "department": "Backend Services",
+      "building": "Alexanderplatz (Germany)",
+      "room": "221",
+      "date_birth": {
+        "year": 1992,
+        "month": 8,
+        "day": 19
+      },
+      "desk_number": 77,
+      "manager": {
+        "id": "m2002-bcc2",
+        "first_name": "Sarah",
+        "last_name": "Iverson"
+      },
+      "phone": "+14082019122",
+      "email": "andrew.savage@leverx.com",
+      "telegram": "@andrewsav",
+      "cnumber": "C9001102",
+      "citizenship": "USA",
+      "visa": [
+        {
+          "issuing_country": "Germany",
+          "type": "Schengen C",
+          "start_date": 1682158800000,
+          "end_date": 1713608400000
+        }
+      ],
+      "passwordHash": "$2a$06$QdB8VaFTTwcHEsKxYwkz5.1aiZLugPM11sF8qfbWJdsYeVxTVT6E.",
+      "role": "employee"
+    },
+    {
+      "_id": "c8d1e0a2-0dc5-47f2-90fb-331a0dacc091",
+      "isRemoteWork": false,
+      "user_avatar": "/assets/employee-avatars/arman.png",
+      "first_name": "Arman",
+      "last_name": "Aeton",
+      "first_native_name": "Arman",
+      "last_native_name": "Aeton",
+      "middle_native_name": "Rafael",
+      "department": "QA Automation",
+      "building": "Sikorski 99 (Poland)",
+      "room": "22",
+      "date_birth": {
+        "year": 1991,
+        "month": 3,
+        "day": 9
+      },
+      "desk_number": 115,
+      "manager": {
+        "id": "m3003-ccf2",
+        "first_name": "Leon",
+        "last_name": "Volkov"
+      },
+      "phone": "+48551100122",
+      "email": "arman.aeton@leverx.com",
+      "telegram": "@arm_aeton",
+      "cnumber": "C9001103",
+      "citizenship": "Armenia",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "Residence Card",
+          "start_date": 1662158800000,
+          "end_date": 1723608400000
+        }
+      ],
+      "passwordHash": "$2a$06$L6sGlHuDQOhULcizMAl8NeYJrWHA4Qjxi3cRB68KMweONM4Uc0T7S",
+      "role": "employee"
+    },
+    {
+      "_id": "d98ef231-cae7-4ec0-92c5-4d1cb88977e4",
+      "isRemoteWork": true,
+      "user_avatar": "/assets/employee-avatars/lula.png",
+      "first_name": "Lula",
+      "last_name": "Aguilar",
+      "first_native_name": "Lula",
+      "last_native_name": "Aguilar",
+      "middle_native_name": "Marisol",
+      "department": "Mobile Development",
+      "building": "Alkala 40 (Spain)",
+      "room": "311",
+      "date_birth": {
+        "year": 1994,
+        "month": 11,
+        "day": 5
+      },
+      "desk_number": 188,
+      "manager": {
+        "id": "m4004-ddb1",
+        "first_name": "Ana",
+        "last_name": "Lopez"
+      },
+      "phone": "+525512009822",
+      "email": "lula.aguilar@leverx.com",
+      "telegram": "@lula_dev",
+      "cnumber": "C9001104",
+      "citizenship": "Mexico",
+      "visa": [
+        {
+          "issuing_country": "Spain",
+          "type": "Schengen C",
+          "start_date": 1690158800000,
+          "end_date": 1721608400000
+        }
+      ],
+      "passwordHash": "$2a$06$k24lCAADYdeWMB7YENTcsuAMpYfRGTGcX9QdANakkljRUXt6k36vq",
+      "role": "employee"
+    },
+    {
+      "_id": "e101ce2e-77dd-4e43-87e5-367e55d3cf55",
+      "isRemoteWork": false,
+      "user_avatar": "/assets/employee-avatars/fintan.png",
+      "first_name": "Fintan",
+      "last_name": "Cruz",
+      "first_native_name": "Fintan",
+      "last_native_name": "Cruz",
+      "middle_native_name": "James",
+      "department": "DevOps & Infrastructure",
+      "building": "Kaspzraka 2 (poland)",
+      "room": "208",
+      "date_birth": {
+        "year": 1987,
+        "month": 6,
+        "day": 27
+      },
+      "desk_number": 96,
+      "manager": {
+        "id": "m5005-eea9",
+        "first_name": "Victor",
+        "last_name": "Hall"
+      },
+      "phone": "+353899122199",
+      "email": "fintan.cruz@leverx.com",
+      "telegram": "@fintan_dev",
+      "cnumber": "C9001105",
+      "citizenship": "Ireland",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "Work Permit",
+          "start_date": 1659158800000,
+          "end_date": 1720608400000
+        }
+      ],
+      "passwordHash": "$2a$06$silnauw.TSC.wldqWU2HtelL62.TZJYYkimOksPp9addUCZCh5/SG",
+      "role": "admin"
+    },
+    {
+      "_id": "f5bbbed2-3041-42df-b8ca-0a6f80f552b7",
+      "isRemoteWork": true,
+      "user_avatar": "/assets/employee-avatars/suzan.png",
+      "first_name": "Suzanne",
+      "last_name": "Taylor",
+      "first_native_name": "Suzanne",
+      "last_native_name": "Taylor",
+      "middle_native_name": "Grace",
+      "department": "Project Management",
+      "building": "Stawowa 50 (Poland)",
+      "room": "511",
+      "date_birth": {
+        "year": 1993,
+        "month": 3,
+        "day": 18
+      },
+      "desk_number": 71,
+      "manager": {
+        "id": "m6006-fcc1",
+        "first_name": "Clara",
+        "last_name": "Hughes"
+      },
+      "phone": "+442038812391",
+      "email": "suzanne.taylor@leverx.com",
+      "telegram": "@suztaylor",
+      "cnumber": "C9001106",
+      "citizenship": "UK",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "National D Visa",
+          "start_date": 1681158800000,
+          "end_date": 1712608400000
+        }
+      ],
+      "passwordHash": "$2a$06$JJPEZIniJJPHkJZFFuLy6uDsKF4ZqL8V9Y06CazDVoclHfWOyCxy2",
+      "role": "employee"
+    },
+    {
+      "_id": "a33e5289-78a1-4ef2-a147-78f042aacaa2",
+      "isRemoteWork": false,
+      "user_avatar": "/assets/employee-avatars/fransesco.png",
+      "first_name": "Francesco",
+      "last_name": "Reed",
+      "first_native_name": "Francesco",
+      "last_native_name": "Reed",
+      "middle_native_name": "Dario",
+      "department": "UI/UX Design",
+      "building": "Stawowa 50 (Poland)",
+      "room": "222",
+      "date_birth": {
+        "year": 1989,
+        "month": 9,
+        "day": 5
+      },
+      "desk_number": 134,
+      "manager": {
+        "id": "m7007-gga4",
+        "first_name": "Elena",
+        "last_name": "Costa"
+      },
+      "phone": "+390212009344",
+      "email": "francesco.reed@leverx.com",
+      "telegram": "@frreed",
+      "cnumber": "C9001107",
+      "citizenship": "Italy",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "Work Permit",
+          "start_date": 1668158800000,
+          "end_date": 1729608400000
+        }
+      ],
+      "passwordHash": "$2a$06$NIB7/I48QV83FhWvfxIKGu.sfFBhk.d/bR5cwZ5jx8HBoAwlkxh5S",
+      "role": "employee"
+    },
+    {
+      "_id": "b991c7cf-76b7-4f88-9939-b1f783c12f23",
+      "isRemoteWork": true,
+      "user_avatar": "/assets/employee-avatars/luis.png",
+      "first_name": "Luis",
+      "last_name": "Baker",
+      "first_native_name": "Luis",
+      "last_native_name": "Baker",
+      "middle_native_name": "Miguel",
+      "department": "Business Analysis",
+      "building": "Celler 45 (Germany)",
+      "room": "119",
+      "date_birth": {
+        "year": 1994,
+        "month": 7,
+        "day": 19
+      },
+      "desk_number": 57,
+      "manager": {
+        "id": "m8008-hhd2",
+        "first_name": "Daniel",
+        "last_name": "Silva"
+      },
+      "phone": "+573001882991",
+      "email": "luis.baker@leverx.com",
+      "telegram": "@luisb",
+      "cnumber": "C9001108",
+      "citizenship": "Colombia",
+      "visa": [
+        {
+          "issuing_country": "Germany",
+          "type": "Schengen C",
+          "start_date": 1696158800000,
+          "end_date": 1727608400000
+        }
+      ],
+      "passwordHash": "$2a$06$YqYRIsFd8sxLBS04ChX6GeKi5tL4/OFeWLSQSdc5K/9pRiBGHwjZC",
+      "role": "admin"
+    },
+    {
+      "_id": "dc51ea27-fc6d-42db-955c-009bf131a501",
+      "isRemoteWork": false,
+      "user_avatar": "/assets/employee-avatars/tina.png",
+      "first_name": "Tina",
+      "last_name": "Madeira",
+      "first_native_name": "Tina",
+      "last_native_name": "Madeira",
+      "middle_native_name": "Helena",
+      "department": "HR & Recruiting",
+      "building": "Stawowa 50 (Poland)",
+      "room": "51",
+      "date_birth": {
+        "year": 1991,
+        "month": 10,
+        "day": 11
+      },
+      "desk_number": 209,
+      "manager": {
+        "id": "m9009-iie3",
+        "first_name": "Patricia",
+        "last_name": "Mendes"
+      },
+      "phone": "+351210009877",
+      "email": "tina.madeira@leverx.com",
+      "telegram": "@tina_hr",
+      "cnumber": "C9001109",
+      "citizenship": "Portugal",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "National D Visa",
+          "start_date": 1689158800000,
+          "end_date": 1720608400000
+        }
+      ],
+      "passwordHash": "$2a$06$Vjx3uiSzQpvhpaUEx7QlF.Kti3AVcXz4bU7mC04sz33Toh3UyBhMG",
+      "role": "employee"
+    },
+    {
+      "_id": "a162541b-ea6d-48d0-bb37-0abdb8328add",
+      "email": "rony.rm@leverx.com",
+      "passwordHash": "$2b$10$If5fByGSn0/oGDWgGzGBju1/HKL9fYKcZYVOZvlbpgvRsob0L9ewK",
+      "first_name": "Rony",
+      "last_name": "Malboro",
+      "first_native_name": "",
+      "last_native_name": "",
+      "middle_native_name": "",
+      "isRemoteWork": false,
+      "user_avatar": "",
+      "department": "",
+      "building": "",
+      "room": "",
+      "date_birth": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "desk_number": 16,
+      "manager": {
+        "id": "",
+        "first_name": "",
+        "last_name": ""
+      },
+      "phone": "",
+      "telegram": "",
+      "cnumber": "",
+      "citizenship": "",
+      "visa": [],
+      "role": "admin"
+    },
+    {
+      "_id": "a38d97e7-af03-40ea-ba64-ceeea3188ed4",
+      "email": "elena.bor@leverx.com",
+      "passwordHash": "$2b$10$TGlJQgLyPPi6w5mJGdqsH.7QWBZojCvy4L9ex/rLTOlYQtgnFentW",
+      "first_name": "Elena",
+      "last_name": "Borisovna",
+      "first_native_name": "",
+      "last_native_name": "",
+      "middle_native_name": "",
+      "isRemoteWork": false,
+      "user_avatar": "",
+      "department": "",
+      "building": "",
+      "room": "56",
+      "date_birth": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "desk_number": 27,
+      "manager": {
+        "id": "",
+        "first_name": "",
+        "last_name": ""
+      },
+      "phone": "",
+      "telegram": "",
+      "cnumber": "",
+      "citizenship": "",
+      "visa": [],
+      "role": "employee"
+    },
+    {
+      "_id": "a65a4c12-be06-4699-8133-daf988b70bb6",
+      "email": "rob.roy@leverx.com",
+      "passwordHash": "$2b$10$CFX1t.d6hQRiYpHJrqS4feWGl3mkmCKHUPRuXClEmisKYg9Yzcj1G",
+      "first_name": "Roby",
+      "last_name": "Roy",
+      "first_native_name": "Roby",
+      "last_native_name": "Roy",
+      "middle_native_name": "William",
+      "isRemoteWork": false,
+      "user_avatar": "",
+      "department": "",
+      "building": "",
+      "room": "225",
+      "date_birth": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "desk_number": 12,
+      "manager": {
+        "id": "",
+        "first_name": "",
+        "last_name": ""
+      },
+      "phone": "",
+      "telegram": "",
+      "cnumber": "",
+      "citizenship": "",
+      "visa": [],
+      "role": "employee"
+    },
+    {
+      "_id": "0dd40fc7-d4e8-430e-b4f6-271df7ab020b",
+      "email": "edi@leverx.com",
+      "passwordHash": "$2b$10$EnWH82l5ABmIK66Yv8Zur.c060wBWVfG.q/xK0FuR5nht60Gzp9kC",
+      "first_name": "Edi",
+      "last_name": "Gonzalez",
+      "first_native_name": "",
+      "last_native_name": "",
+      "middle_native_name": "",
+      "isRemoteWork": false,
+      "user_avatar": "",
+      "department": "Frontend Development",
+      "building": "",
+      "room": "99",
+      "date_birth": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "desk_number": 67,
+      "manager": {
+        "id": "",
+        "first_name": "",
+        "last_name": ""
+      },
+      "phone": "+129576293129",
+      "telegram": "@ed_i",
+      "cnumber": "",
+      "citizenship": "",
+      "visa": [],
+      "role": "employee"
+    }
+  ]
+}
