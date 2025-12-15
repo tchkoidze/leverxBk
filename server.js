@@ -54,8 +54,56 @@ function createUserTemplate({ email, passwordHash, firstName, lastName }) {
 }
 
 // get all users
+// app.get("/users", (req, res) => {
+//   res.json(db.data.users);
+// });
+
 app.get("/users", (req, res) => {
-  res.json(db.data.users);
+  const { name, email, phone, telegram, building, room, department } =
+    req.query;
+
+  const lc = (str) => (str ? String(str).toLowerCase() : "");
+
+  let users = db.data.users;
+
+  users = users.filter((emp) => {
+    const nameQuery = lc(name).trim();
+    const fullNativeName = [
+      emp.first_native_name,
+      emp.middle_native_name,
+      emp.last_native_name,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    const matchesName =
+      !nameQuery ||
+      lc(emp._id).includes(nameQuery) ||
+      lc(emp.first_name).includes(nameQuery) ||
+      lc(emp.last_name).includes(nameQuery) ||
+      fullNativeName.includes(nameQuery);
+
+    const matchesEmail = !email || lc(emp.email).includes(lc(email));
+    const matchesPhone = !phone || lc(emp.phone).includes(lc(phone));
+    const matchesTelegram =
+      !telegram || lc(emp.telegram).includes(lc(telegram));
+    const matchesBuilding = !building || emp.building === building;
+    const matchesRoom = !room || emp.room === room;
+    const matchesDepartment = !department || emp.department === department;
+
+    return (
+      matchesName &&
+      matchesEmail &&
+      matchesPhone &&
+      matchesTelegram &&
+      matchesBuilding &&
+      matchesRoom &&
+      matchesDepartment
+    );
+  });
+
+  res.json(users);
 });
 
 // get user by id
