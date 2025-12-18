@@ -265,43 +265,10 @@ app.patch("/users/:id", async (req, res) => {
     const value = updates[key];
     if (value === undefined) continue;
 
-    // if (key === "manager" && typeof value === "object") {
-    //   user.manager = {
-    //     ...user.manager,
-    //     ...value,
-    //   };
-    //   continue;
-    // }
-
     if (key === "manager" && typeof value === "object") {
       user.manager = resolveManager(value, user.manager, db.data.users);
       continue;
     }
-    // if (key === "manager" && typeof value === "object" && value !== null) {
-    //   const mergedManager = {
-    //     ...user.manager,
-    //     ...value,
-    //   };
-
-    //   const hasName =
-    //     Boolean(mergedManager.first_name?.trim()) ||
-    //     Boolean(mergedManager.last_name?.trim());
-
-    //   // generate id only if manager info exists and id is missing
-    //   if (hasName && !mergedManager.id) {
-    //     mergedManager.id = crypto.randomUUID();
-    //   }
-
-    //   // if no name info at all → reset manager to empty
-    //   if (!hasName) {
-    //     mergedManager.id = "";
-    //     mergedManager.first_name = "";
-    //     mergedManager.last_name = "";
-    //   }
-
-    //   user.manager = mergedManager;
-    //   continue;
-    // }
 
     if (key === "date_birth" && typeof value === "object") {
       user.date_birth = {
