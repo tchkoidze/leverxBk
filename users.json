@@ -4,29 +4,29 @@
       "_id": "d6d206e5-2ca4-443d-8404-dc05284e2d15",
       "isRemoteWork": true,
       "user_avatar": "/assets/employee-avatars/luffy.png",
-      "first_name": "tony",
-      "last_name": "halowy",
-      "first_native_name": "",
-      "last_native_name": "",
-      "middle_native_name": "",
-      "department": "",
-      "building": "",
-      "room": "",
+      "first_name": "Luffy",
+      "last_name": "Monkey",
+      "first_native_name": "Luffy",
+      "last_native_name": "Monkey",
+      "middle_native_name": "D.",
+      "department": "Web & Mobile",
+      "building": "Pilsudskiego 69 (Poland)",
+      "room": "1404",
       "date_birth": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 1901,
+        "month": 1,
+        "day": 1
       },
-      "desk_number": 0,
+      "desk_number": 20,
       "manager": {
         "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
-        "first_name": "",
-        "last_name": ""
+        "first_name": "John",
+        "last_name": "Snow"
       },
-      "phone": "+5793129179",
-      "email": "tony.hal@leverx.com",
-      "telegram": "",
-      "cnumber": "",
+      "phone": "+12931293129",
+      "email": "luffy.monkey@leverx.com",
+      "telegram": "@monkey",
+      "cnumber": "C5336116",
       "citizenship": "Georgia",
       "visa": [
         {
@@ -394,7 +394,7 @@
         }
       ],
       "passwordHash": "$2a$06$Vjx3uiSzQpvhpaUEx7QlF.Kti3AVcXz4bU7mC04sz33Toh3UyBhMG",
-      "role": "employee"
+      "role": "hr"
     },
     {
       "_id": "a162541b-ea6d-48d0-bb37-0abdb8328add",
@@ -439,7 +439,7 @@
       "middle_native_name": "",
       "isRemoteWork": false,
       "user_avatar": "",
-      "department": "",
+      "department": "HR & Recruiting",
       "building": "",
       "room": "56",
       "date_birth": {
@@ -449,9 +449,9 @@
       },
       "desk_number": 27,
       "manager": {
-        "id": "",
-        "first_name": "",
-        "last_name": ""
+        "id": "dc51ea27-fc6d-42db-955c-009bf131a501",
+        "first_name": "Tina",
+        "last_name": "Madeira"
       },
       "phone": "",
       "telegram": "",
@@ -505,7 +505,7 @@
       "user_avatar": "",
       "department": "Frontend Development",
       "building": "",
-      "room": "99",
+      "room": "100",
       "date_birth": {
         "year": null,
         "month": null,
@@ -513,9 +513,9 @@
       },
       "desk_number": 67,
       "manager": {
-        "id": "",
-        "first_name": "",
-        "last_name": ""
+        "id": "ae0e23f9-21c8-4c93-a95c-44991f112201",
+        "first_name": "brendan",
+        "last_name": "krueger"
       },
       "phone": "+129576293129",
       "telegram": "@ed_i",

@@ -53,6 +53,59 @@ function createUserTemplate({ email, passwordHash, firstName, lastName }) {
   };
 }
 
+function resolveManager(managerInput, currentManager, users) {
+  const merged = {
+    ...currentManager,
+    ...managerInput,
+  };
+
+  const first = merged.first_name?.trim() || "";
+  const last = merged.last_name?.trim() || "";
+
+  const hasAnyName = first || last;
+  const hasFullName = first && last;
+
+  // CASE A: no name at all
+  if (!hasAnyName) {
+    return {
+      id: "",
+      first_name: "",
+      last_name: "",
+    };
+  }
+
+  // CASE C / D: full name → try to match real user
+
+  if (hasFullName) {
+    const normalize = (s = "") => s.toString().trim().toLowerCase();
+    const matchedUser = users.find(
+      //(u) => u.first_name === first && u.last_name === last
+      (u) =>
+        normalize(u.first_name) === normalize(first) &&
+        normalize(u.last_name) === normalize(last)
+    );
+
+    if (matchedUser) {
+      return {
+        id: matchedUser._id,
+        first_name: first,
+        last_name: last,
+      };
+    }
+  }
+
+  // CASE B: partial OR full but no match
+  if (!merged.id) {
+    merged.id = crypto.randomUUID();
+  }
+
+  return {
+    id: merged.id,
+    first_name: first,
+    last_name: last,
+  };
+}
+
 // get all users
 // app.get("/users", (req, res) => {
 //   res.json(db.data.users);
@@ -201,48 +254,54 @@ app.patch("/users/:id/role", async (req, res) => {
 app.patch("/users/:id", async (req, res) => {
   const userId = req.params.id;
   const updates = req.body;
+  console.log("updates", updates);
 
   const user = db.data.users.find((u) => u._id === userId);
   if (!user) {
     return res.status(404).json({ message: "User not found" });
   }
 
-  // update fields
-  // for (const key in updates) {
-  //   if (updates[key] !== undefined) {
-  //     // Special handling for nested objects (like manager or date_birth)
-  //     if (typeof updates[key] === "object" && updates[key] !== null) {
-  //       user[key] = { ...user[key], ...updates[key] };
-  //     } else {
-  //       user[key] = updates[key];
-  //     }
-  //   }
-  // }
   for (const key in updates) {
-    // if (updates[key] !== undefined) {
-    //   if (key === "manager" && typeof updates[key] === "object") {
-    //     user.manager = {
-    //       ...user.manager,
-    //       ...updates.manager,
-    //     };
-    //   } else if (typeof updates[key] === "object" && updates[key] !== null) {
-    //     user[key] = { ...user[key], ...updates[key] };
-    //     //user[key] = updates[key];
-    //   } else {
-    //     user[key] = updates[key];
-    //   }
-    // }
-
     const value = updates[key];
     if (value === undefined) continue;
 
+    // if (key === "manager" && typeof value === "object") {
+    //   user.manager = {
+    //     ...user.manager,
+    //     ...value,
+    //   };
+    //   continue;
+    // }
+
     if (key === "manager" && typeof value === "object") {
-      user.manager = {
-        ...user.manager,
-        ...value,
-      };
+      user.manager = resolveManager(value, user.manager, db.data.users);
       continue;
     }
+    // if (key === "manager" && typeof value === "object" && value !== null) {
+    //   const mergedManager = {
+    //     ...user.manager,
+    //     ...value,
+    //   };
+
+    //   const hasName =
+    //     Boolean(mergedManager.first_name?.trim()) ||
+    //     Boolean(mergedManager.last_name?.trim());
+
+    //   // generate id only if manager info exists and id is missing
+    //   if (hasName && !mergedManager.id) {
+    //     mergedManager.id = crypto.randomUUID();
+    //   }
+
+    //   // if no name info at all → reset manager to empty
+    //   if (!hasName) {
+    //     mergedManager.id = "";
+    //     mergedManager.first_name = "";
+    //     mergedManager.last_name = "";
+    //   }
+
+    //   user.manager = mergedManager;
+    //   continue;
+    // }
 
     if (key === "date_birth" && typeof value === "object") {
       user.date_birth = {
